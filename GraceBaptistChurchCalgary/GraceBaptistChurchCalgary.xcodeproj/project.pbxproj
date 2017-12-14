@@ -7,14 +7,24 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		321D3A551FE23C800097E42C /* FileUtils.swift in Sources */ = {isa = PBXBuildFile; fileRef = 321D3A541FE23C800097E42C /* FileUtils.swift */; };
+		321D3A581FE240340097E42C /* home.json in Resources */ = {isa = PBXBuildFile; fileRef = 321D3A571FE240340097E42C /* home.json */; };
+		321D3A5B1FE241D90097E42C /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 321D3A5A1FE241D90097E42C /* HomeViewController.swift */; };
+		321D3A5D1FE246D40097E42C /* about.json in Resources */ = {isa = PBXBuildFile; fileRef = 321D3A5C1FE246D40097E42C /* about.json */; };
 		32C38DDF1C476BEC00DD7F04 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 32C38DDE1C476BEB00DD7F04 /* AppDelegate.swift */; };
 		32C38DE11C476BEC00DD7F04 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 32C38DE01C476BEC00DD7F04 /* ViewController.swift */; };
 		32C38DE41C476BEC00DD7F04 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 32C38DE21C476BEC00DD7F04 /* Main.storyboard */; };
 		32C38DE61C476BEC00DD7F04 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 32C38DE51C476BEC00DD7F04 /* Assets.xcassets */; };
 		32C38DE91C476BEC00DD7F04 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 32C38DE71C476BEC00DD7F04 /* LaunchScreen.storyboard */; };
+		ED54A8FF7B4E10695DA0A516 /* libPods-GraceBaptistChurchCalgary.a in Frameworks */ = {isa = PBXBuildFile; fileRef = C977E9D573D148EDC38FA931 /* libPods-GraceBaptistChurchCalgary.a */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		30004D20BBBBF32F99B9F2C6 /* Pods-GraceBaptistChurchCalgary.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GraceBaptistChurchCalgary.debug.xcconfig"; path = "Pods/Target Support Files/Pods-GraceBaptistChurchCalgary/Pods-GraceBaptistChurchCalgary.debug.xcconfig"; sourceTree = "<group>"; };
+		321D3A541FE23C800097E42C /* FileUtils.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FileUtils.swift; sourceTree = "<group>"; };
+		321D3A571FE240340097E42C /* home.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = home.json; sourceTree = "<group>"; };
+		321D3A5A1FE241D90097E42C /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
+		321D3A5C1FE246D40097E42C /* about.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = about.json; sourceTree = "<group>"; };
 		32C38DDB1C476BEB00DD7F04 /* GraceBaptistChurchCalgary.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = GraceBaptistChurchCalgary.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		32C38DDE1C476BEB00DD7F04 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		32C38DE01C476BEC00DD7F04 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -22,6 +32,8 @@
 		32C38DE51C476BEC00DD7F04 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		32C38DE81C476BEC00DD7F04 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		32C38DEA1C476BEC00DD7F04 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		C977E9D573D148EDC38FA931 /* libPods-GraceBaptistChurchCalgary.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-GraceBaptistChurchCalgary.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		E99A541B04C130DD1AA3F659 /* Pods-GraceBaptistChurchCalgary.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GraceBaptistChurchCalgary.release.xcconfig"; path = "Pods/Target Support Files/Pods-GraceBaptistChurchCalgary/Pods-GraceBaptistChurchCalgary.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -29,17 +41,37 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				ED54A8FF7B4E10695DA0A516 /* libPods-GraceBaptistChurchCalgary.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		321D3A561FE23FFF0097E42C /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				321D3A571FE240340097E42C /* home.json */,
+				321D3A5C1FE246D40097E42C /* about.json */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		321D3A591FE241C00097E42C /* ViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				321D3A5A1FE241D90097E42C /* HomeViewController.swift */,
+			);
+			path = ViewControllers;
+			sourceTree = "<group>";
+		};
 		32C38DD21C476BEB00DD7F04 = {
 			isa = PBXGroup;
 			children = (
 				32C38DDD1C476BEB00DD7F04 /* GraceBaptistChurchCalgary */,
 				32C38DDC1C476BEB00DD7F04 /* Products */,
+				ED46EE3A6427041B55157853 /* Pods */,
+				AD54978CD53DE146BA8D3D96 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -54,14 +86,34 @@
 		32C38DDD1C476BEB00DD7F04 /* GraceBaptistChurchCalgary */ = {
 			isa = PBXGroup;
 			children = (
+				321D3A591FE241C00097E42C /* ViewControllers */,
+				321D3A561FE23FFF0097E42C /* Resources */,
 				32C38DDE1C476BEB00DD7F04 /* AppDelegate.swift */,
 				32C38DE01C476BEC00DD7F04 /* ViewController.swift */,
 				32C38DE21C476BEC00DD7F04 /* Main.storyboard */,
 				32C38DE51C476BEC00DD7F04 /* Assets.xcassets */,
 				32C38DE71C476BEC00DD7F04 /* LaunchScreen.storyboard */,
 				32C38DEA1C476BEC00DD7F04 /* Info.plist */,
+				321D3A541FE23C800097E42C /* FileUtils.swift */,
 			);
 			path = GraceBaptistChurchCalgary;
+			sourceTree = "<group>";
+		};
+		AD54978CD53DE146BA8D3D96 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				C977E9D573D148EDC38FA931 /* libPods-GraceBaptistChurchCalgary.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		ED46EE3A6427041B55157853 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				30004D20BBBBF32F99B9F2C6 /* Pods-GraceBaptistChurchCalgary.debug.xcconfig */,
+				E99A541B04C130DD1AA3F659 /* Pods-GraceBaptistChurchCalgary.release.xcconfig */,
+			);
+			name = Pods;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -71,9 +123,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 32C38DED1C476BEC00DD7F04 /* Build configuration list for PBXNativeTarget "GraceBaptistChurchCalgary" */;
 			buildPhases = (
+				AE27C4DA66F12712D743B9BD /* [CP] Check Pods Manifest.lock */,
 				32C38DD71C476BEB00DD7F04 /* Sources */,
 				32C38DD81C476BEB00DD7F04 /* Frameworks */,
 				32C38DD91C476BEB00DD7F04 /* Resources */,
+				80B111DE58F40B16DFB0C749 /* [CP] Embed Pods Frameworks */,
+				9C46DDBE18796F726DF098E3 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -123,19 +178,74 @@
 			files = (
 				32C38DE91C476BEC00DD7F04 /* LaunchScreen.storyboard in Resources */,
 				32C38DE61C476BEC00DD7F04 /* Assets.xcassets in Resources */,
+				321D3A581FE240340097E42C /* home.json in Resources */,
+				321D3A5D1FE246D40097E42C /* about.json in Resources */,
 				32C38DE41C476BEC00DD7F04 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		80B111DE58F40B16DFB0C749 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-GraceBaptistChurchCalgary/Pods-GraceBaptistChurchCalgary-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		9C46DDBE18796F726DF098E3 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-GraceBaptistChurchCalgary/Pods-GraceBaptistChurchCalgary-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		AE27C4DA66F12712D743B9BD /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-GraceBaptistChurchCalgary-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		32C38DD71C476BEB00DD7F04 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				321D3A551FE23C800097E42C /* FileUtils.swift in Sources */,
 				32C38DE11C476BEC00DD7F04 /* ViewController.swift in Sources */,
 				32C38DDF1C476BEC00DD7F04 /* AppDelegate.swift in Sources */,
+				321D3A5B1FE241D90097E42C /* HomeViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -197,7 +307,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				MTL_ENABLE_DEBUG_INFO = YES;
 				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = iphoneos;
@@ -237,7 +347,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				SDKROOT = iphoneos;
 				SWIFT_VERSION = 4.0;
@@ -248,9 +358,11 @@
 		};
 		32C38DEE1C476BEC00DD7F04 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 30004D20BBBBF32F99B9F2C6 /* Pods-GraceBaptistChurchCalgary.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = GraceBaptistChurchCalgary/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.dinmab.GraceBaptistChurchCalgary;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -259,9 +371,11 @@
 		};
 		32C38DEF1C476BEC00DD7F04 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = E99A541B04C130DD1AA3F659 /* Pods-GraceBaptistChurchCalgary.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = GraceBaptistChurchCalgary/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.dinmab.GraceBaptistChurchCalgary;
 				PRODUCT_NAME = "$(TARGET_NAME)";

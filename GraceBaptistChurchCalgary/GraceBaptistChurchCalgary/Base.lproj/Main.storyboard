@@ -4,7 +4,6 @@
         <adaptation id="fullscreen"/>
     </device>
     <dependencies>
-        <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13772"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
@@ -12,7 +11,6 @@
         <!--Sermons-->
         <scene sceneID="SEz-ld-TlV">
             <objects>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="TfG-rS-AwB" userLabel="First Responder" sceneMemberID="firstResponder"/>
                 <viewController id="ArJ-LA-Ohn" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="bLU-id-TGs"/>
@@ -55,6 +53,7 @@
                     <tabBarItem key="tabBarItem" title="Sermons" id="Amd-C4-cY5"/>
                     <navigationItem key="navigationItem" id="pjT-mm-gUh"/>
                 </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="TfG-rS-AwB" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="-945" y="1809"/>
         </scene>
@@ -180,8 +179,7 @@
         <!--Home-->
         <scene sceneID="LhY-AJ-QKf">
             <objects>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="KOA-7L-mRx" userLabel="First Responder" sceneMemberID="firstResponder"/>
-                <viewController id="xmm-uO-dkJ" sceneMemberID="viewController">
+                <viewController id="xmm-uO-dkJ" customClass="HomeViewController" customModule="GraceBaptistChurchCalgary" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="YBj-OY-1UK"/>
                         <viewControllerLayoutGuide type="bottom" id="Juv-28-3gX"/>
@@ -202,65 +200,72 @@
                                         <color key="textColor" red="0.99999600649999998" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         <nil key="highlightedColor"/>
                                     </label>
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="GBC-logo" translatesAutoresizingMaskIntoConstraints="NO" id="PF5-E4-t7p">
+                                        <rect key="frame" x="10" y="0.0" width="300" height="120"/>
+                                    </imageView>
                                 </subviews>
                                 <color key="backgroundColor" red="0.13333333333333333" green="0.37647058823529411" blue="0.6705882352941176" alpha="1" colorSpace="calibratedRGB"/>
                                 <constraints>
+                                    <constraint firstItem="7kR-88-iyB" firstAttribute="top" secondItem="PF5-E4-t7p" secondAttribute="bottom" constant="5" id="0W6-FU-M2H"/>
                                     <constraint firstAttribute="trailing" secondItem="7kR-88-iyB" secondAttribute="trailing" constant="8" id="LJS-vw-4xG"/>
+                                    <constraint firstAttribute="trailing" secondItem="PF5-E4-t7p" secondAttribute="trailing" constant="10" id="bqH-fu-rgh"/>
+                                    <constraint firstItem="PF5-E4-t7p" firstAttribute="top" secondItem="ktY-AY-NwG" secondAttribute="top" id="h0s-sL-XJg"/>
                                     <constraint firstAttribute="height" constant="150" id="iSR-kN-Eyt"/>
                                     <constraint firstAttribute="bottom" secondItem="7kR-88-iyB" secondAttribute="bottom" constant="4" id="jgV-WJ-Fei"/>
+                                    <constraint firstItem="PF5-E4-t7p" firstAttribute="leading" secondItem="ktY-AY-NwG" secondAttribute="leading" constant="10" id="sUM-ke-urZ"/>
                                     <constraint firstItem="7kR-88-iyB" firstAttribute="leading" secondItem="ktY-AY-NwG" secondAttribute="leading" constant="8" id="yJc-NC-SHG"/>
                                 </constraints>
                             </view>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="lqU-1z-tms">
-                                <rect key="frame" x="160" y="381" width="160" height="50"/>
+                                <rect key="frame" x="160" y="326" width="160" height="50"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="160" id="V6d-K9-MUj"/>
                                     <constraint firstAttribute="height" constant="50" id="lZY-kI-Qpx"/>
                                 </constraints>
                                 <state key="normal" title="Email GBC"/>
+                                <connections>
+                                    <action selector="emailTapped" destination="xmm-uO-dkJ" eventType="touchUpInside" id="hlV-y3-Zb9"/>
+                                </connections>
                             </button>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="kgl-w4-xXw">
-                                <rect key="frame" x="0.0" y="157" width="320" height="166"/>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Gzd-M5-cu5">
+                                <rect key="frame" x="0.0" y="381" width="320" height="50"/>
                                 <constraints>
-                                    <constraint firstAttribute="height" constant="166" id="6qn-5b-fmw"/>
+                                    <constraint firstAttribute="height" constant="50" id="fDS-0X-akD"/>
                                 </constraints>
-                                <string key="text">GRACE BAPTIST CHURCH
-
-2670 Radcliffe Dr. SE
-Calgary, AB T2A 7M2
-p:(403) 235-3636
-f:(403) 235-3900
-gbc@gbccalgary.com</string>
-                                <fontDescription key="fontDescription" type="system" weight="medium" pointSize="19"/>
-                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                <nil key="highlightedColor"/>
-                            </label>
+                                <state key="normal" title="Directions"/>
+                            </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="VoR-e1-Wi6">
-                                <rect key="frame" x="0.0" y="381" width="160" height="50"/>
+                                <rect key="frame" x="0.0" y="326" width="160" height="50"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="50" id="MFY-GS-fj5"/>
                                     <constraint firstAttribute="width" constant="160" id="raQ-XL-gae"/>
                                 </constraints>
                                 <state key="normal" title="Call GBC"/>
+                                <connections>
+                                    <action selector="callTapped" destination="xmm-uO-dkJ" eventType="touchUpInside" id="N7C-Oz-cBD"/>
+                                </connections>
                             </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
-                            <constraint firstAttribute="trailing" secondItem="kgl-w4-xXw" secondAttribute="trailing" id="16s-AZ-Lly"/>
                             <constraint firstItem="ktY-AY-NwG" firstAttribute="leading" secondItem="wDU-oE-a9L" secondAttribute="leading" id="40r-WH-4lT"/>
-                            <constraint firstItem="Juv-28-3gX" firstAttribute="top" secondItem="lqU-1z-tms" secondAttribute="bottom" id="4cc-Tc-K0e"/>
-                            <constraint firstItem="kgl-w4-xXw" firstAttribute="centerY" secondItem="wDU-oE-a9L" secondAttribute="centerY" id="AEJ-eu-tTF"/>
+                            <constraint firstAttribute="trailing" secondItem="Gzd-M5-cu5" secondAttribute="trailing" id="80m-Vy-Kl4"/>
+                            <constraint firstItem="Gzd-M5-cu5" firstAttribute="top" secondItem="lqU-1z-tms" secondAttribute="bottom" constant="5" id="Br1-sq-uNg"/>
+                            <constraint firstItem="Gzd-M5-cu5" firstAttribute="leading" secondItem="wDU-oE-a9L" secondAttribute="leading" id="GxN-Ff-YS4"/>
                             <constraint firstAttribute="trailing" secondItem="lqU-1z-tms" secondAttribute="trailing" id="JMq-c0-ez9"/>
-                            <constraint firstItem="Juv-28-3gX" firstAttribute="top" secondItem="VoR-e1-Wi6" secondAttribute="bottom" id="Md9-of-TO5"/>
-                            <constraint firstItem="kgl-w4-xXw" firstAttribute="centerX" secondItem="wDU-oE-a9L" secondAttribute="centerX" id="TPA-k8-I7G"/>
+                            <constraint firstItem="Juv-28-3gX" firstAttribute="top" secondItem="Gzd-M5-cu5" secondAttribute="bottom" id="Tn3-JL-ov4"/>
                             <constraint firstAttribute="trailing" secondItem="ktY-AY-NwG" secondAttribute="trailing" id="WgU-OQ-E3e"/>
-                            <constraint firstItem="kgl-w4-xXw" firstAttribute="leading" secondItem="wDU-oE-a9L" secondAttribute="leading" id="YwN-aN-bKB"/>
-                            <constraint firstItem="VoR-e1-Wi6" firstAttribute="leading" secondItem="kgl-w4-xXw" secondAttribute="leading" id="aTR-VA-gju"/>
+                            <constraint firstItem="VoR-e1-Wi6" firstAttribute="leading" secondItem="Gzd-M5-cu5" secondAttribute="leading" id="plp-NX-bCd"/>
+                            <constraint firstItem="Gzd-M5-cu5" firstAttribute="top" secondItem="VoR-e1-Wi6" secondAttribute="bottom" constant="5" id="qhM-VQ-Usu"/>
                             <constraint firstItem="ktY-AY-NwG" firstAttribute="top" secondItem="wDU-oE-a9L" secondAttribute="top" id="wYp-X3-QwD"/>
                         </constraints>
                     </view>
                     <tabBarItem key="tabBarItem" title="Home" id="7Nx-X7-HQM"/>
+                    <connections>
+                        <outlet property="serviceLabel" destination="7kR-88-iyB" id="Xl4-Vt-IzW"/>
+                    </connections>
                 </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="KOA-7L-mRx" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="410.625" y="-180"/>
         </scene>
@@ -276,9 +281,9 @@ gbc@gbccalgary.com</string>
                     <connections>
                         <segue destination="xmm-uO-dkJ" kind="relationship" relationship="viewControllers" id="cLz-2a-Emn"/>
                         <segue destination="J7t-9A-VAp" kind="relationship" relationship="viewControllers" id="H0X-Dl-NN2"/>
+                        <segue destination="XWA-g6-fAw" kind="relationship" relationship="viewControllers" id="mff-HR-wTq"/>
                         <segue destination="xg6-bJ-VKe" kind="relationship" relationship="viewControllers" id="Af1-tz-f2h"/>
                         <segue destination="hpU-vh-mtl" kind="relationship" relationship="viewControllers" id="Rtu-Iz-L4J"/>
-                        <segue destination="XWA-g6-fAw" kind="relationship" relationship="viewControllers" id="mff-HR-wTq"/>
                     </connections>
                 </tabBarController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="a2a-cQ-NMx" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -288,7 +293,6 @@ gbc@gbccalgary.com</string>
         <!--Settings-->
         <scene sceneID="zDy-Ni-zSs">
             <objects>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="twl-9K-gBl" userLabel="First Responder" sceneMemberID="firstResponder"/>
                 <viewController id="hpU-vh-mtl" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="Rz0-BH-eme"/>
@@ -301,13 +305,13 @@ gbc@gbccalgary.com</string>
                     </view>
                     <tabBarItem key="tabBarItem" title="Settings" id="6Da-v9-NQg"/>
                 </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="twl-9K-gBl" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="-2055" y="-148"/>
         </scene>
         <!--Social-->
         <scene sceneID="A6t-Bx-w8N">
             <objects>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="v0I-Kt-JLk" userLabel="First Responder" sceneMemberID="firstResponder"/>
                 <viewController id="xg6-bJ-VKe" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="WWI-dR-8dH"/>
@@ -331,8 +335,12 @@ gbc@gbccalgary.com</string>
                     </view>
                     <tabBarItem key="tabBarItem" title="Social" id="ThV-4S-dKE"/>
                 </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="v0I-Kt-JLk" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="-1728.75" y="940"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="GBC-logo" width="596" height="183"/>
+    </resources>
 </document>

@@ -7,19 +7,26 @@
 //
 
 import UIKit
+import WebKit
 
 class HomeViewController: UIViewController {
     @IBOutlet weak var headerImage: UIImageView!
     @IBOutlet weak var headerView: UIView!
     @IBOutlet weak var serviceLabel: UILabel!
     @IBOutlet weak var addressLabel: UILabel!
+    @IBOutlet weak var webContainer: WKWebView!
 
     override func viewDidLoad() {
         super.viewDidLoad()
-
-        if let dict = FileUtils().getJsonData("home") as? [String: AnyObject] {
-            print(dict)
-        }
+        Church.fetchData({(err) in
+            guard err == nil else {
+                print("Error \(err!)")
+                return
+            }
+            DispatchQueue.main.async() {
+                self.webContainer.load(URLRequest(url: URL(string: Church.shared.facebookUrl)!))
+            }
+        })
         // Do any additional setup after loading the view.
     }
 

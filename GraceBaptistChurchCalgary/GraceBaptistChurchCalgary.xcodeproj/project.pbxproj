@@ -7,24 +7,27 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		321D3A551FE23C800097E42C /* FileUtils.swift in Sources */ = {isa = PBXBuildFile; fileRef = 321D3A541FE23C800097E42C /* FileUtils.swift */; };
-		321D3A581FE240340097E42C /* home.json in Resources */ = {isa = PBXBuildFile; fileRef = 321D3A571FE240340097E42C /* home.json */; };
 		321D3A5B1FE241D90097E42C /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 321D3A5A1FE241D90097E42C /* HomeViewController.swift */; };
-		321D3A5D1FE246D40097E42C /* about.json in Resources */ = {isa = PBXBuildFile; fileRef = 321D3A5C1FE246D40097E42C /* about.json */; };
 		32C38DDF1C476BEC00DD7F04 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 32C38DDE1C476BEB00DD7F04 /* AppDelegate.swift */; };
 		32C38DE11C476BEC00DD7F04 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 32C38DE01C476BEC00DD7F04 /* ViewController.swift */; };
 		32C38DE41C476BEC00DD7F04 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 32C38DE21C476BEC00DD7F04 /* Main.storyboard */; };
 		32C38DE61C476BEC00DD7F04 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 32C38DE51C476BEC00DD7F04 /* Assets.xcassets */; };
 		32C38DE91C476BEC00DD7F04 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 32C38DE71C476BEC00DD7F04 /* LaunchScreen.storyboard */; };
+		BC16A1E31FE4EB71006142BD /* DetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC16A1E21FE4EB71006142BD /* DetailViewController.swift */; };
+		BC4538401FE48A880003EC7F /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = BC45383F1FE48A880003EC7F /* GoogleService-Info.plist */; };
+		BC4538441FE4A68D0003EC7F /* Church.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC4538431FE4A68D0003EC7F /* Church.swift */; };
+		BC4538491FE4A89C0003EC7F /* FirebaseHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC4538481FE4A89C0003EC7F /* FirebaseHelper.swift */; };
+		BC45384B1FE4AE980003EC7F /* Staff.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC45384A1FE4AE980003EC7F /* Staff.swift */; };
+		BC45384D1FE4AEB50003EC7F /* AboutUs.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC45384C1FE4AEB50003EC7F /* AboutUs.swift */; };
+		BC45384F1FE4AF3D0003EC7F /* Belief.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC45384E1FE4AF3D0003EC7F /* Belief.swift */; };
+		BC4538511FE4AFC40003EC7F /* AboutUsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC4538501FE4AFC40003EC7F /* AboutUsViewController.swift */; };
+		BC4538561FE4E15E0003EC7F /* SplitViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC4538551FE4E15E0003EC7F /* SplitViewController.swift */; };
 		ED54A8FF7B4E10695DA0A516 /* libPods-GraceBaptistChurchCalgary.a in Frameworks */ = {isa = PBXBuildFile; fileRef = C977E9D573D148EDC38FA931 /* libPods-GraceBaptistChurchCalgary.a */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		30004D20BBBBF32F99B9F2C6 /* Pods-GraceBaptistChurchCalgary.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GraceBaptistChurchCalgary.debug.xcconfig"; path = "Pods/Target Support Files/Pods-GraceBaptistChurchCalgary/Pods-GraceBaptistChurchCalgary.debug.xcconfig"; sourceTree = "<group>"; };
-		321D3A541FE23C800097E42C /* FileUtils.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FileUtils.swift; sourceTree = "<group>"; };
-		321D3A571FE240340097E42C /* home.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = home.json; sourceTree = "<group>"; };
 		321D3A5A1FE241D90097E42C /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
-		321D3A5C1FE246D40097E42C /* about.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = about.json; sourceTree = "<group>"; };
 		32C38DDB1C476BEB00DD7F04 /* GraceBaptistChurchCalgary.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = GraceBaptistChurchCalgary.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		32C38DDE1C476BEB00DD7F04 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		32C38DE01C476BEC00DD7F04 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -32,6 +35,16 @@
 		32C38DE51C476BEC00DD7F04 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		32C38DE81C476BEC00DD7F04 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		32C38DEA1C476BEC00DD7F04 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		BC16A1E21FE4EB71006142BD /* DetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailViewController.swift; sourceTree = "<group>"; };
+		BC45383F1FE48A880003EC7F /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = "GoogleService-Info.plist"; path = "GraceBaptistChurchCalgary/GoogleService-Info.plist"; sourceTree = SOURCE_ROOT; };
+		BC4538411FE48F990003EC7F /* GraceBaptistChurchCalgary.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = GraceBaptistChurchCalgary.entitlements; sourceTree = "<group>"; };
+		BC4538431FE4A68D0003EC7F /* Church.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Church.swift; sourceTree = "<group>"; };
+		BC4538481FE4A89C0003EC7F /* FirebaseHelper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirebaseHelper.swift; sourceTree = "<group>"; };
+		BC45384A1FE4AE980003EC7F /* Staff.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Staff.swift; sourceTree = "<group>"; };
+		BC45384C1FE4AEB50003EC7F /* AboutUs.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AboutUs.swift; sourceTree = "<group>"; };
+		BC45384E1FE4AF3D0003EC7F /* Belief.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Belief.swift; sourceTree = "<group>"; };
+		BC4538501FE4AFC40003EC7F /* AboutUsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AboutUsViewController.swift; sourceTree = "<group>"; };
+		BC4538551FE4E15E0003EC7F /* SplitViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SplitViewController.swift; sourceTree = "<group>"; };
 		C977E9D573D148EDC38FA931 /* libPods-GraceBaptistChurchCalgary.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-GraceBaptistChurchCalgary.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		E99A541B04C130DD1AA3F659 /* Pods-GraceBaptistChurchCalgary.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GraceBaptistChurchCalgary.release.xcconfig"; path = "Pods/Target Support Files/Pods-GraceBaptistChurchCalgary/Pods-GraceBaptistChurchCalgary.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -51,8 +64,7 @@
 		321D3A561FE23FFF0097E42C /* Resources */ = {
 			isa = PBXGroup;
 			children = (
-				321D3A571FE240340097E42C /* home.json */,
-				321D3A5C1FE246D40097E42C /* about.json */,
+				BC45383F1FE48A880003EC7F /* GoogleService-Info.plist */,
 			);
 			path = Resources;
 			sourceTree = "<group>";
@@ -61,6 +73,9 @@
 			isa = PBXGroup;
 			children = (
 				321D3A5A1FE241D90097E42C /* HomeViewController.swift */,
+				BC4538501FE4AFC40003EC7F /* AboutUsViewController.swift */,
+				BC4538551FE4E15E0003EC7F /* SplitViewController.swift */,
+				BC16A1E21FE4EB71006142BD /* DetailViewController.swift */,
 			);
 			path = ViewControllers;
 			sourceTree = "<group>";
@@ -86,6 +101,10 @@
 		32C38DDD1C476BEB00DD7F04 /* GraceBaptistChurchCalgary */ = {
 			isa = PBXGroup;
 			children = (
+				BC4538531FE4B4A80003EC7F /* UI */,
+				BC4538471FE4A8900003EC7F /* utils */,
+				BC4538421FE4A67D0003EC7F /* model */,
+				BC4538411FE48F990003EC7F /* GraceBaptistChurchCalgary.entitlements */,
 				321D3A591FE241C00097E42C /* ViewControllers */,
 				321D3A561FE23FFF0097E42C /* Resources */,
 				32C38DDE1C476BEB00DD7F04 /* AppDelegate.swift */,
@@ -94,7 +113,6 @@
 				32C38DE51C476BEC00DD7F04 /* Assets.xcassets */,
 				32C38DE71C476BEC00DD7F04 /* LaunchScreen.storyboard */,
 				32C38DEA1C476BEC00DD7F04 /* Info.plist */,
-				321D3A541FE23C800097E42C /* FileUtils.swift */,
 			);
 			path = GraceBaptistChurchCalgary;
 			sourceTree = "<group>";
@@ -105,6 +123,40 @@
 				C977E9D573D148EDC38FA931 /* libPods-GraceBaptistChurchCalgary.a */,
 			);
 			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		BC4538421FE4A67D0003EC7F /* model */ = {
+			isa = PBXGroup;
+			children = (
+				BC4538431FE4A68D0003EC7F /* Church.swift */,
+				BC45384C1FE4AEB50003EC7F /* AboutUs.swift */,
+				BC45384A1FE4AE980003EC7F /* Staff.swift */,
+				BC45384E1FE4AF3D0003EC7F /* Belief.swift */,
+			);
+			path = model;
+			sourceTree = "<group>";
+		};
+		BC4538471FE4A8900003EC7F /* utils */ = {
+			isa = PBXGroup;
+			children = (
+				BC4538481FE4A89C0003EC7F /* FirebaseHelper.swift */,
+			);
+			path = utils;
+			sourceTree = "<group>";
+		};
+		BC4538531FE4B4A80003EC7F /* UI */ = {
+			isa = PBXGroup;
+			children = (
+				BC4538541FE4B4B10003EC7F /* cells */,
+			);
+			path = UI;
+			sourceTree = "<group>";
+		};
+		BC4538541FE4B4B10003EC7F /* cells */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = cells;
 			sourceTree = "<group>";
 		};
 		ED46EE3A6427041B55157853 /* Pods */ = {
@@ -150,6 +202,12 @@
 				TargetAttributes = {
 					32C38DDA1C476BEB00DD7F04 = {
 						CreatedOnToolsVersion = 7.0.1;
+						DevelopmentTeam = 7WCVCPCMQQ;
+						SystemCapabilities = {
+							com.apple.Keychain = {
+								enabled = 1;
+							};
+						};
 					};
 				};
 			};
@@ -178,9 +236,8 @@
 			files = (
 				32C38DE91C476BEC00DD7F04 /* LaunchScreen.storyboard in Resources */,
 				32C38DE61C476BEC00DD7F04 /* Assets.xcassets in Resources */,
-				321D3A581FE240340097E42C /* home.json in Resources */,
-				321D3A5D1FE246D40097E42C /* about.json in Resources */,
 				32C38DE41C476BEC00DD7F04 /* Main.storyboard in Resources */,
+				BC4538401FE48A880003EC7F /* GoogleService-Info.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -208,9 +265,12 @@
 			files = (
 			);
 			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-GraceBaptistChurchCalgary/Pods-GraceBaptistChurchCalgary-resources.sh",
+				$PODS_CONFIGURATION_BUILD_DIR/gRPC/gRPCCertificates.bundle,
 			);
 			name = "[CP] Copy Pods Resources";
 			outputPaths = (
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
@@ -242,10 +302,17 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				321D3A551FE23C800097E42C /* FileUtils.swift in Sources */,
+				BC16A1E31FE4EB71006142BD /* DetailViewController.swift in Sources */,
+				BC45384B1FE4AE980003EC7F /* Staff.swift in Sources */,
+				BC4538511FE4AFC40003EC7F /* AboutUsViewController.swift in Sources */,
+				BC4538441FE4A68D0003EC7F /* Church.swift in Sources */,
 				32C38DE11C476BEC00DD7F04 /* ViewController.swift in Sources */,
 				32C38DDF1C476BEC00DD7F04 /* AppDelegate.swift in Sources */,
+				BC4538561FE4E15E0003EC7F /* SplitViewController.swift in Sources */,
 				321D3A5B1FE241D90097E42C /* HomeViewController.swift in Sources */,
+				BC4538491FE4A89C0003EC7F /* FirebaseHelper.swift in Sources */,
+				BC45384F1FE4AF3D0003EC7F /* Belief.swift in Sources */,
+				BC45384D1FE4AEB50003EC7F /* AboutUs.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -361,10 +428,12 @@
 			baseConfigurationReference = 30004D20BBBBF32F99B9F2C6 /* Pods-GraceBaptistChurchCalgary.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = GraceBaptistChurchCalgary/GraceBaptistChurchCalgary.entitlements;
+				DEVELOPMENT_TEAM = 7WCVCPCMQQ;
 				INFOPLIST_FILE = GraceBaptistChurchCalgary/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.dinmab.GraceBaptistChurchCalgary;
+				PRODUCT_BUNDLE_IDENTIFIER = com.datatrix.GraceBaptistChurchCalgary;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
 			name = Debug;
@@ -374,10 +443,12 @@
 			baseConfigurationReference = E99A541B04C130DD1AA3F659 /* Pods-GraceBaptistChurchCalgary.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = GraceBaptistChurchCalgary/GraceBaptistChurchCalgary.entitlements;
+				DEVELOPMENT_TEAM = 7WCVCPCMQQ;
 				INFOPLIST_FILE = GraceBaptistChurchCalgary/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.dinmab.GraceBaptistChurchCalgary;
+				PRODUCT_BUNDLE_IDENTIFIER = com.datatrix.GraceBaptistChurchCalgary;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
 			name = Release;

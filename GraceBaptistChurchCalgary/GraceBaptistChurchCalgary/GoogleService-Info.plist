@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>AD_UNIT_ID_FOR_BANNER_TEST</key>
+	<string>ca-app-pub-3940256099942544/2934735716</string>
+	<key>AD_UNIT_ID_FOR_INTERSTITIAL_TEST</key>
+	<string>ca-app-pub-3940256099942544/4411468910</string>
+	<key>CLIENT_ID</key>
+	<string>699279171808-av1p8982dhaoccjqj698qpl79gafc4ce.apps.googleusercontent.com</string>
+	<key>REVERSED_CLIENT_ID</key>
+	<string>com.googleusercontent.apps.699279171808-av1p8982dhaoccjqj698qpl79gafc4ce</string>
+	<key>API_KEY</key>
+	<string>AIzaSyBWva4km4KIwIn7pcSWQMSxx_Zn2eq4yaE</string>
+	<key>GCM_SENDER_ID</key>
+	<string>699279171808</string>
+	<key>PLIST_VERSION</key>
+	<string>1</string>
+	<key>BUNDLE_ID</key>
+	<string>com.datatrix.GraceBaptistChurchCalgary</string>
+	<key>PROJECT_ID</key>
+	<string>gbc-calgary</string>
+	<key>STORAGE_BUCKET</key>
+	<string>gbc-calgary.appspot.com</string>
+	<key>IS_ADS_ENABLED</key>
+	<true></true>
+	<key>IS_ANALYTICS_ENABLED</key>
+	<false></false>
+	<key>IS_APPINVITE_ENABLED</key>
+	<false></false>
+	<key>IS_GCM_ENABLED</key>
+	<true></true>
+	<key>IS_SIGNIN_ENABLED</key>
+	<true></true>
+	<key>GOOGLE_APP_ID</key>
+	<string>1:699279171808:ios:98bd0ac01368028b</string>
+	<key>DATABASE_URL</key>
+	<string>https://gbc-calgary.firebaseio.com</string>
+</dict>
+</plist>
